@@ -12,7 +12,7 @@ defmodule ValidUrl do
   @link_regex Regex.compile!(
     "^" <>
       # protocol identifier
-      "(?:(?:https?|ftp)://)" <>
+      "(?:(?:https?|ftp)://)?" <>
       # user:pass authentication
       "(?:\\S+(?::\\S*)?@)?" <>
       "(?:" <>
